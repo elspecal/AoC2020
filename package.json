@@ -1,0 +1,22 @@
+{
+  "name": "advent_of_code_2020",
+  "version": "1.0.0",
+  "description": "My Advent of Code 2020 solutions, written in declarative/functional style JS.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elspecal/AoC2020.git"
+  },
+  "keywords": [
+    "aoc",
+    "aoc2020",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Miklos Csepella",
+  "license": "ISC",
+  "homepage": "https://github.com/elspecal/AoC2020#readme",
+  "devDependencies": {
+    "eslint": "^7.16.0"
+  }
+}
