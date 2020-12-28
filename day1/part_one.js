@@ -1,13 +1,13 @@
 'use strict';
 
-import { getInput, getRemainder, hasRemainder } from './util.js';
+import { getInput, getDifference, hasTheDifference } from './util.js';
 
 function main() {
   const input = getInput();
   const amountA = input
-    .map(getRemainder)
-    .find(remainder => hasRemainder(input, remainder));
-  const amountB = getRemainder(amountA);
+    .map(getDifference)
+    .find(remainder => hasTheDifference(input, remainder));
+  const amountB = getDifference(amountA);
 
   console.log(amountA * amountB);
 }
