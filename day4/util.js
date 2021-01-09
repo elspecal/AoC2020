@@ -2,8 +2,6 @@
 
 import { readFileSync } from 'fs';
 
-const REQUIRED_KEYS = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid'];
-
 export function getInput() {
   return readFileSync('./day4/input', 'utf-8').trim().split('\n\n');
 }
@@ -17,7 +15,9 @@ export function parseInput(passportData) {
 }
 
 export function keysAreValid(keyCollection) {
-  return REQUIRED_KEYS.every(key => keyCollection.includes(key));
+  return ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid'].every(key =>
+    keyCollection.includes(key)
+  );
 }
 
 function birthYearIsValid(year) {
